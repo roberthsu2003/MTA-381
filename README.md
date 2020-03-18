@@ -1,2 +1,21 @@
 # MTA-381
-Microsoft MTA-381 Introduction to Programming Using Python
+## Microsoft MTA-381 Introduction to Programming Using Python
+1 總共有120題測驗,70%通過測驗  
+2 120題含蓋範圍如下:   
+
+| 範圍 | 120題 |
+|:--|:--|
+|  資料類型的運算式| 38題 |
+|  流程控制(判斷和迴圈)| 18題 |
+|  input和output操作| 16題 |
+|  文件和資料架構 | 16題 |
+|  問題排解和錯誤處理| 16題 |
+|  模組和工具操作| 16題 |	
+
+[1 資料類型的運算式-38]()  
+[2 流程控制-18]()  
+[3 input和output操作-16]()  
+[4 文件和資料架構-16]()  
+[5 問題排解和錯誤處理-16]()  
+[6 模組和工具操作-16]()  
+
