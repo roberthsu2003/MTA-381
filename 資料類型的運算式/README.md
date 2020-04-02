@@ -86,6 +86,7 @@ Python比較運算式的結果為假，則會傳回什麼資料？
 
 ```
 以下程式碼，執行時輸出值為何?
+
 lst_1 = [1, 2]
 lst_2 = [3, 4]
 lst_3 = lst_1 + lst_2 
@@ -101,13 +102,14 @@ print(lst_4)
 ```
 以下是計算跑步平均時速的程式碼，輸出結果要盡可能精準。
 請問A、B處的程式碼應該為何？
+
 distance = ____A_____(input('請輸入距離(單位：公尺)：'))
 time =_____B_____ (input('請輸入時間(單位：秒)'))
 avg = distance / 1000 / time / 3600
 print('平均時速 = ', avg, ' 公里/小時')
 
-A:________ ① int    ② string    ③ float   ④ bool
-B:________ ① int    ② float     ③ string  ④ bool
+A: ① int    ② string    ③ float   ④ bool
+B: ① int    ② float     ③ string  ④ bool
 ```
 
 ```
@@ -139,9 +141,9 @@ E：  _______tel = '0928000000'
 04 msg = "你的年齡是： " + str(age)
 05 print(msg)
 
-A: ________在 01 行中 born 的資料型別為何？
-B: ________在 03 行中 age 的資料型別為何？
-C: ________在 04 行中 msg 的資料型別為何？
+A: 在 01 行中 born 的資料型別為何？
+B: 在 03 行中 age 的資料型別為何？
+C: 在 04 行中 msg 的資料型別為何？
 ```
 
 ```
@@ -158,7 +160,146 @@ B：_________變數 b 的資料類型是 float。
 C：_________變數 c 的資料類型為 int。 
 ```
 
-```python
+```
+下列常值請用bool、float、int、str填入正確的資料型別：
+
+A：______type(+5E10)
+B：______type(4.0)
+C：______type("False ")
+D：______type(True)
+
+```
+
+```
+下列程式碼是用來以座號查詢學生姓名，但執行結果並不正確，請回答下列問題，來找出可能的錯誤。
+
+01 datas = {1: '張三', 2: '李四', 3: '王五'}
+02 num = input('請輸入座號: ')
+03 if not num in datas:
+04     print('該座號不存在！')
+05 else:
+06     print("學生姓名為： " + datas[num])
+
+A：第01 行敘述的datas 字典中，儲存哪兩種資料類型？
+① string、bool    ② float、string   ③ int、string      ④ int、float
+
+B：第 02 行敘述的 num 變數的資料型別為何？
+① bool    ② float     ③ int   ④ string   
+
+C：第 03 行敘述執行時，為何在 datas 字典中找不到資料?  ① 程式邏輯錯誤    ② 資料型別不匹配     ③ 變數名稱誤用保留字   ④ 語法不正確
+```
+
+```
+下列是用來查詢傳入值資料型別的函式，請根據執行結果回答下列問題
+
+01 def dataType(val):
+02      return type(val)
+03 print(dataType(False))
+04 print(dataType(3.0))
+05 print(dataType(3))
+06 print(dataType("False"))
+
+A：第03 行敘述的執行結果為何？
+① <class'bool'>    ② <class'float'>    ③ <class'int'>      ④ <class'str'>
+
+B：第04 行敘述的執行結果為何？
+① <class'bool'>    ② <class'float'>    ③ <class'int'>      ④ <class'str'>
+
+C：第05 行敘述的執行結果為何？
+① <class'bool'>    ② <class'float'>    ③ <class'int'>      ④ <class'str'>
+
+D：第06 行敘述的執行結果為何？
+① <class'bool'>    ② <class'float'>    ③ <class'int'>      ④ <class'str'>
+```
+
+```
+讓使用者輸入一個整數值，但即使輸入小數也能轉換為整數，請問下列哪個敘述符合要求？
+
+① num = input("請輸入整數：")
+② num = int((input("請輸入整數："))
+③ num = float(input("請輸入整數："))
+④ num = str(input("請輸入整數："))
+```
+
+```
+下列函式可以將傳入的字串，以相反的順序重組後傳回新字串，請回答下列問題來完成程式碼。
+
+01 def reverse_word(old_word):
+02     word = ''
+03     for index in________:
+04         word +=_______ 05     return word 06 print(reverse_word("nohtyP"))
+
+A：第03 行敘述的空格應該填入下列哪個指令？
+① range(len(word) + 1)
+② range(len(old_word) - 1)  ③ range(len(old_word))
+④ range(len(old_word) - 1, -1, -1)
+
+B：第04 行敘述的空格應該填入下列哪個指令？
+① old_word[index-1]
+② old_word[len(old_word)-len(word)]
+③ old_word[len(word)-1]
+④ old_word[index]
+
+```
+
+```
+以下程式碼是計算今天遊戲過關數，請問第03 行應該填入下列哪個敘述？
+01 last = input("請問你昨天過第幾關?")
+02 now = input("請問你今天過第幾關?")
+03 ____________________
+
+① print("恭賀你今天通過了 " + str(int(now) - int(last)) + " 關!")
+② print("恭賀你今天通過了 " + (int(now) - int(last)) + " 關!")
+③ print("恭賀你今天通過了 " + str(int(now - last)) + " 關!")
+④ print("恭賀你今天通過了 " + str(now - last) + " 關!")
+
+```
+
+```
+如果word = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' 時，請用代碼填入下列分割操作的結果：
+
+①ZWTQNKHEB、②PMJG、③DEFGHIJKLMNO、④PONMLKJIHGFE、⑤DEFGHIJKLMNOP、⑥DGJM、⑦OLIF、⑧""
+
+A：word[3:15]
+B：word[3:15:3]
+C：word[3:15:-3]
+D：word[15:3:-3]
+E：word[15:3]
+F：word[::-3]
+```
+
+```
+14.students 串列(清單)包含 100 位學生的姓名，最後15位為轉出學生。如果要分割串列顯示目前在校學生，請問可以使用下列哪兩個指令？
+
+① students[0:-14]
+② students[0:-15]
+③ students[1:-14]
+④ students[:-15]
+⑤ students[1:-15]
+
+```
+
+```
+books 串列(清單)包含 300 本書的編號，如要取得第2個編號開始到最後，而且間隔1個編號的串列(如：2, 4, 6…)，請問可以使用下列哪個指令？
+
+① books[2:2]    ② books[::2]    ③ books[1::2]    ④ books[1:2]
+
+```
+
+```
+下列程式碼中，x是使用者輸入的整數，y 等於 x 乘以 -1，然後再平方。
+要確保結果正確，請用代碼填入完成第2行的敘述：(可使用一次、多次、或不使用)
+
+01 x = eval(input("請輸入一個整數："))
+02 y = _______________________
+                                  
+① -
+② (
+③ )
+④ *2
+⑤ **2
+⑥ 2
+⑦ x
 
 ```
 
