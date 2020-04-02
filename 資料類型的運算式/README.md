@@ -303,3 +303,238 @@ books 串列(清單)包含 300 本書的編號，如要取得第2個編號開始
 
 ```
 
+```
+下列為傳回折扣值的函式，如果傳入值female(女性)、kid(兒童)其中一個為真，就獲得 5% 的折扣。
+請問第 03 行應該填入下列哪個敘述？
+
+01 def get_off(female, kid):
+02     off = 0.05
+03     ________________
+04          off = 0
+05     return off
+
+① if not (female or kid):
+② if not (female and kid):
+③ if not (female) and kid:
+④ if (not female) or (not kid):
+```
+
+```
+請使用代碼填入下列運算式的結果。① True ② False ③ 3 ④ None 
+
+A：_________ 0 or 3
+B：_________ bool(0)
+C：_________ None is None	
+D：_________ -3 < 0 < 3 
+```
+
+```
+(2 * (1 + 2) ** 2 - 2 ** 2 * 2)運算式的執行結果為何？
+
+① 4     ② 20     ③ 10     ④ 28
+```
+
+```
+請使用代碼回答下列程式碼執行的結果：
+
+01 x = 'Happy'
+02 print(x)
+03 y = x
+04 x += 'Lucky'
+05 print(x)
+06 print(y)
+
+① Happy ② Lucky ③ HappyLucky ④ LuckyHappy
+
+A：_______第2行執行結果
+B：_______第5行執行結果
+C：_______第6行執行結果
+```
+
+```
+運算式為x + y * z - k，請回答下列問題：
+
+A：運算式會最先計算哪個部份？
+① x + y    ② y * z    ③ z - k
+
+B：運算式接下來會計算哪個部份？
+① +(加法)    ② -(減法)    ③ *(乘法)
+
+C：運算式等於下列哪個運算式？
+① (x + y) * (z - k)    ② (x + (y * z)) - k    ③ x + ((y * z) + k)
+```
+
+```
+請使用代碼填入運算式的運算先後順序。
+① +, -(加,減) 
+② *, /  (乘,除)
+③+,-,not(正、負、非)
+④( ) 括弧
+⑤ **(指數)
+⑥ or (或)
+```
+
+```
+下列為計算字串中指定字母數量的程式碼，請回答以下問題來完成程式
+
+01 def count(letter, word):
+02     num = 0
+03     for_____________________:
+04         if___________________:
+05              num += 1 06     return num
+07 word = 'Python is ….'     # 句子省略
+08 letter = input("請輸入要計算哪個字母") 09 letter_num = count(letter, word)
+10 print(letter + ' 字母共有 ' + str(letter_num) + ' 個')
+
+A：請問第3行應該填入下列哪段指令？
+① w in word    ② letter in word    ③ word in w    ④ w in range(0)
+
+B：請問第4行應該填入下列哪段指令？
+① letter = w    ② letter is word    ③ letter == word    ④ letter in w 
+
+```
+
+
+```
+下列為計算單車出租費用的程式碼，費用計算規則如下：
+• 出租一天費用是每天100元。
+• 如果在晚上 10 點後返還，將加收一天額外的費用。
+• 如果是在星期天租借，將減收5％的費用。
+• 如果是在星期四租借，將減收10％的費用。
+
+請回答以下問題來完成程式：
+
+01 onTime = input("單車是否在晚上 10 點前返還？(請填 y 或 n)").lower()
+02 days = int(input("請輸入單車出租天數？"))
+03 weekday = input("單車是在星期幾出租?").capitalize()
+04 money = 100
+05 if onTime __________________
+06     days += 1
+07 if weekday ______________
+08     total = (days * money) * .95  09 elif weekday ________________
+10     total = (days * money) * .9
+11 else:
+12     total = (days * money)  13 print("單車的出租費用總計為 : ", int(total), "元")
+
+A：請問第5行應該填入下列哪段指令？
+
+① == "y":     ② == "n":   ③ != "y":    ④ != "N":
+ 
+B：請問第7行應該填入下列哪段指令？
+
+① == "Sunday":    ② >="Sunday":    ③ is "Sunday":    ④ = "Sunday":
+
+C：請問第9行應該填入下列哪段指令？
+
+① == "Thursday":    ② <= "Thursday":    ③ is "Thursday":    ④ ="Thursday":
+
+```
+
+```
+下列為一個除法函式，函式中檢查分母不能為零，以及需要兩個數值。
+請回答以下問題來完成程式。
+
+01 def divide(num1, num2):
+02     ______________________
+03         print("需要兩個數值")
+04     ______________________
+05         print("分母不能為零")
+06     else:
+07         return num1 / num2
+
+A：請問第2行應該填入下列哪段敘述？
+
+① if num1 is None or num2 is None:
+② if num1 = None or num2 = None:
+③ if num1 is None and num2 is None:
+④ if num1 = None and num2 = None:
+
+B：請問第4行應該填入下列哪個敘述？
+
+① elif num2 == 0:
+② elif num2 = 0:
+③ elif num2 != 0:
+④ elif num2 in 0: 
+
+```
+
+```
+如果x=13、y=5，請使用代碼填入下列是哪個運算式的執行結果：
+
+① print(x / y) ② print(x // y) ③ print(x % y)
+
+A：______ 2		B：_______ 3		C：_______ 2.6
+
+```
+
+```
+請問下列程式碼執行的結果為何？
+a = 4
+while a >= 1:
+    if a % 4 == 0:
+        print("P",end='')
+    elif a - 2 < 0:
+        print("C",end='')
+    elif a / 3 == 0:
+        print("G",end='')
+    else:     print("B",end='') a = a - 1
+
+①PGBC
+②PBBC
+③BPGC
+④BGPC	
+```
+
+```
+請問下列程式碼執行的結果為何？
+datas = [0, 1, 2, 3, 4, 5, 6]
+print(7 in datas)
+
+① 6    ② 7     ③ True    ④ False
+
+```
+
+```
+請問下列程式碼執行的結果為何？
+
+01 list1 = ['a', 'b', 'c', 'd']
+02 list2 = ['A', 'B', 'C', 'D']
+03 print(list1 is list2)
+04 print(list1 == list2)
+05 list1 = list2
+06 print(list1 is list2)
+07 print(list1 == list2)
+
+A：請問第3行敘述執行後顯示結果為何？
+① True    ② False
+
+B：請問第4行敘述執行後顯示結果為何？
+① True    ② False
+
+C：請問第6行敘述執行後顯示結果為何？
+① True    ② False
+
+D：請問第7行敘述執行後顯示結果為何？
+① True    ② False
+
+```
+
+```
+下列為兩數大小比較的程式碼，下列執行結果的說明是否正確
+請填入 是 、 否
+
+01 num1 = eval(input("請輸入第一個數字："))
+02 num2 = eval(input("請輸入第二個數字："))
+03 if num1 == num2:
+04      print("二個數字相等")
+05 if num1 <= num2:
+06      print("第一個數字較小")
+07 if num1 > num2:
+08      print("第一個數字較大")
+09 if num2 = num1:
+10      print("二個數字相等")
+
+A：_____ 04行的敘述只有當 num1 等於 num2 時才會執行。 B：_____ 06行的敘述只有當 num1 小於 num2 時才會執行。 C：_____ 08行的敘述只有當 num1 大於 num2 時才會執行。 D：_____ 09行的敘述不可以正確執行。
+
+```
+
