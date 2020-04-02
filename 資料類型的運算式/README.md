@@ -419,7 +419,8 @@ B：請問第4行應該填入下列哪段指令？
 08     total = (days * money) * .95  09 elif weekday ________________
 10     total = (days * money) * .9
 11 else:
-12     total = (days * money)  13 print("單車的出租費用總計為 : ", int(total), "元")
+12     total = (days * money)
+13 print("單車的出租費用總計為 : ", int(total), "元")
 
 A：請問第5行應該填入下列哪段指令？
 
