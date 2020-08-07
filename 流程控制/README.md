@@ -12,7 +12,7 @@
 ```
 下列何者不是Python的重複結構指令？
 
-① for … ne xt   ② for … else    ③ for …    ④ while … 
+① for … next   ② for … else    ③ for …    ④ while … 
 ```
 
 ```
