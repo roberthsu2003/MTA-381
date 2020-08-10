@@ -238,7 +238,7 @@ B:④
 A：word[3:15]
 B：word[3:15:3]
 C：word[3:15:-3]
-D：1
+D：word[15:3:-3]
 E：word[15:3]
 F：word[::-3]
 
