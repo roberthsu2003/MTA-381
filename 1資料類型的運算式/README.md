@@ -352,6 +352,7 @@ A：_______第2行執行結果
 B：_______第5行執行結果
 C：_______第6行執行結果
 
+---------------------------
 A:①
 B:③
 C:① 
@@ -407,7 +408,8 @@ A：請問第3行應該填入下列哪段指令？
 B：請問第4行應該填入下列哪段指令？
 ① letter = w    ② letter is word    ③ letter == word    ④ letter in w 
 
-A:②
+--------------------------------------
+A:①
 B:④
 ```
 
@@ -429,7 +431,8 @@ B:④
 05 if onTime __________________
 06     days += 1
 07 if weekday ______________
-08     total = (days * money) * .95  09 elif weekday ________________
+08     total = (days * money) * .95 
+09 elif weekday ________________
 10     total = (days * money) * .9
 11 else:
 12     total = (days * money)
