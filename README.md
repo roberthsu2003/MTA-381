@@ -1,6 +1,6 @@
 # MTA-381
 ## Microsoft MTA-381 Introduction to Programming Using Python
-1 總共有120題測驗,70%通過測驗,45題   
+1 總共有120題測驗,70%通過測驗,45分   
 2 120題含蓋範圍如下:   
 
 | 範圍 | 120題 |
