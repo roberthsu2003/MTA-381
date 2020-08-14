@@ -19,12 +19,14 @@
 07 ___________________________________('end')
 08 file.close()
 
-A：請問第2行應該填入下列哪段指令？ ① isfile('test45.txt')
+A：請問第2行應該填入下列哪段指令？
+① isfile('test45.txt')
 ② path.isfile('test45.txt')
 ③ os.exist('test45.txt')
 ④ os.path.isfile('test45.txt')
  
-B：請問第4行應該填入下列哪段敘述？ ① print('test45.txt')
+B：請問第4行應該填入下列哪段敘述？
+① print('test45.txt')
 ② output('test45.txt')
 ③ print(file.read())
 ④ print(file.get('test45.txt'))
@@ -39,6 +41,16 @@ D：請問第7行應該填入下列哪段敘述？
 ① Append     ② os.file.add     ③ file.write    ④ os.write
 
 _________________________
+import os
+if os.path.isfile('test45.txt'):
+    file = open('test45.txt')
+    print(file.read())
+    file.close()
+
+file = open('test45.txt', 'a+')
+file.write('end')
+file.close()
+
 A:④
 B:③ 
 C:②
