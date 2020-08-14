@@ -337,7 +337,7 @@ A：請問第1行應該填入下列哪段敘述？
 ③ for i in range(len(score)):
 ④ for i in score: 
 
-B：請問第4行應該填入下列哪段指令？ ① break    ② continue    ③ exit()    ④ end 
+B：請問第3行應該填入下列哪段指令？ ① break    ② continue    ③ exit()    ④ end 
 
 ------------------------------
 A:③
@@ -376,18 +376,19 @@ B:③
 ```
 11.請利用下列敘述區段的代碼(可省略或重複使用)，組合成一個顯示 1 ~ 50中間所有質數的程式。
 
-___________A______________
-___________B______________
-        ______________C____________
-        	if flag == True:
-        	          print(num, end=',')
-        	_________________D_____________  
+___________A___________
+    ________B__________
+            _____C_____
+           
+    if flag == True:
+        print(num, end=',')
+    _______D_________ 
 ① num = 2
-    while num < 51:
+   while num < 51:
 	    flag = True
 	    
 ② num = 2
-    flag = True
+   flag = True
         while num < 51:
         
 ③ break
@@ -414,6 +415,20 @@ D：________請問D此處依序應該填入哪段敘述？
 
 
 --------------------------------
+實際程式碼
+num = 2
+while num < 51:
+    flag = True
+    for i in range(2, num):
+        if num % i == 0:
+            flag = False
+            break
+           
+    if flag == True:
+        print(num, end=',')
+    num = num + 1;
+    
+    
 A:①
 B:⑦
 C:③
@@ -438,7 +453,7 @@ ___________E____________
 ① for i in range(len(books)):
 
 ②     if books[i] == title:
-             print("{0} 在書庫中！".format(title))
+          print("{0} 在書庫中！".format(title))
              
 ③     else:
 	      print("{0} 不在書庫中！".format(title))
@@ -459,6 +474,15 @@ E：請問E此處依序應該填入哪段敘述？
 
 
 -----------------------------------
+
+def find_book(books, title):
+	for i in range(len(books)):
+		if books[i] == title:
+			print("{0} 在書庫中！".format(title))
+			break;
+		else:
+			print("{0} 不在書庫中！".format(title))
+			
 A:⑤
 B:①
 C:②
