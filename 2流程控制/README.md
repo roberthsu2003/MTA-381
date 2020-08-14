@@ -522,6 +522,22 @@ D：請問第10行應該填入下列哪段敘述？ ① flag = False 	② flag
 
 
 ------------------------------------
+tel = "0000-000-000"
+s = ""
+while tel != "":
+    flag = False
+    tel = input("請輸入行動電話號碼(格式為 0000-000-000)：")
+    s = tel.split('-')
+    if len(s) == 3:
+        if len(s[0]) == 4 and len(s[1]) == 3 and len(s[2])== 3:
+             if s[0].isdigit() and s[1].isdigit() and s[2].isdigit():
+                    flag = True
+    
+    print(flag)
+    break;
+
+
+
 A:②
 B:①
 C:①
@@ -544,13 +560,27 @@ D:②
 07     else:
 08        ____________________
 
-A：第3行應該填入下列何者？① while    ② if    ③ for    ④ break
-B：第6行應該填入下列何者？① while    ② if    ③ for    ④ break
+A：第3行應該填入下列何者？
+① while    ② if    ③ for    ④ break
+
+B：第6行應該填入下列何者？
+① while    ② if    ③ for    ④ break
+
 C：第8行應該填入下列何者？
 ① break    ② continue    ③ index +=1    ④ index =1
 
 
 ----------------------------------------
+
+datas=['A','B','C','D','E','F','G','H','I']
+index = 0
+while(index < len(datas)):
+    print(datas[index])
+    if datas[index] == 'E':
+        break;
+    else:
+        index += 1
+        
 A:①
 B:④
 C:③
