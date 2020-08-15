@@ -399,7 +399,8 @@ C:②
 04         if___________________:
 05              num += 1 06     return num
 07 word = 'Python is ….'     # 句子省略
-08 letter = input("請輸入要計算哪個字母") 09 letter_num = count(letter, word)
+08 letter = input("請輸入要計算哪個字母")
+09 letter_num = count(letter, word)
 10 print(letter + ' 字母共有 ' + str(letter_num) + ' 個')
 
 A：請問第3行應該填入下列哪段指令？
@@ -409,6 +410,14 @@ B：請問第4行應該填入下列哪段指令？
 ① letter = w    ② letter is word    ③ letter == word    ④ letter in w 
 
 --------------------------------------
+def count(letter, word):
+    num = 0
+    for w in word:
+        if letter in w:
+            num += 1
+    return num
+count('r', 'robertrrr')
+
 A:①
 B:④
 ```
@@ -513,7 +522,9 @@ while a >= 1:
         print("C",end='')
     elif a / 3 == 0:
         print("G",end='')
-    else:     print("B",end='') a = a - 1
+    else:
+        print("B",end='')
+    a = a - 1
 
 ①PGBC
 ②PBBC
