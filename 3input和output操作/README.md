@@ -206,6 +206,18 @@ C：請問第10行的C應該填入下列哪段敘述？
 ④ format.avg('.2f'))
 
 _________________________
+
+sum, num = 0, 0
+avg = 0.0
+while (num != -1):
+    score = float(input('請輸入成績(0 ~ 100)，停止時請輸入-1：') )
+    if score == -1:
+       break
+     sum += score
+     num += 1
+avg = float(sum / num)
+print('平均成績： ' + format(avg, '.2f'))
+
 A:②
 B:④ 
 C:①               
@@ -237,7 +249,7 @@ _______________________
 ```
 
 ```
-7下列為計算平均分數的程式碼，程式功能如下：
+7.下列為計算平均分數的程式碼，程式功能如下：
 
 • 可以接受輸入的使用者姓名。
 • 可以接受任意筆輸入的整數分數，輸入-1可以結束程式並顯示訊息。
@@ -262,6 +274,17 @@ B：請問第10行的B應該填入下列哪段指令？
 ① %3.1f     ② %5.1f     ③ %1.3f     ④ %1.5f     
 
 ______________________________
+name = input("請輸入姓名：")
+score, num ,sum = 0, 0, 0
+while (score != -1):
+   score = int(input("請輸入成績：(停止時請輸入-1)"))
+     if score == -1:
+          break
+     sum += score
+     num += 1
+     avg = sum / num
+print("%-10s：平均分數 = %5.1f"%(name, avg))
+
 A:④
 B:②
 ```
@@ -299,6 +322,12 @@ B:②
 ⑦{0:10}
 
 _____________________
+def print_data(data_file):
+    f = open(data_file,'r')
+    for datas in f:
+        d = datas.split(",")
+        print("{0:10}{1:5.1f}{2:7.2f}".format(d[0], eval(d[1]), eval(d[2])))
+
 ① ⑦ ⑥ ⑤
 ```
 
@@ -318,6 +347,11 @@ _____________________
 ① print('"{0}",{1}'.format(name, score)) ② print('"%s",%s' % (name, score))  ③ print('"' + name + '",' + score)  ④ print(name + ',' + score)、 ⑤ print("{0},{1}".format(name, score))
 
 ______________________
+name = input("請輸入姓名：")
+score = input("請輸入分數：")
+print('"{0}",{1}'.format(name, score))
+print('"%s",%s' % (name, score))
+print('"' + name + '",' + score) 
 ① ② ③
 ```
 
@@ -335,6 +369,10 @@ ______________________
 ④ input("fruit ")
 
 _____________________
+print("請輸入最喜歡的水果：")
+fruit = input()
+print(fruit)
+
 ①
 ```
 ### old
