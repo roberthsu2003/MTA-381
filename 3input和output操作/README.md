@@ -82,6 +82,13 @@ B：第4行應該填入何者？ C：第5行應該填入何者？
 D：第6行應該填入何者？ E：第7行應該填入何者？
 
 _______________________
+import os
+def read_line(fileName):
+	if os.path.isfile(fileName):
+		with open(fileName, 'r') as f:
+			return f.readline()
+	else:
+		return '檔案不存在'	
 A:④
 B:①
 C:③
