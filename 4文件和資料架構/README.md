@@ -88,6 +88,19 @@ ________________________________________
 
 --------------------------------------
 ① ⑥
+
+def input_name():
+    name = input("請輸入姓名：")
+    return name
+    
+def calc(num, calories):
+    total_cal = num * calories
+    return total_cal
+    
+user = input_name()
+cups = int(input(user + "請輸入一天喝幾杯珍珠奶茶？"))
+print(user + " 你攝取了", calc(cups, 160), "大卡")
+
 ```
 
 ```
@@ -123,6 +136,17 @@ A:是
 B:是
 C:否
 D:否
+
+def add_score(score, rest, add=1):
+    if rest == False:
+        add *= 2
+    return score + add
+
+stuScore = 75
+addScore = 3
+isRest = True
+newScore = add_score(stuScore, isRest, addScore)
+print(newScore)
 ```
 
 ```
@@ -152,6 +176,11 @@ C：第03行敘述應該使用下面哪個敘述？
 A:②
 B:①
 C:②
+
+def save_money(money, save):
+    money += save
+    return money
+    
 ```
 ### old
 

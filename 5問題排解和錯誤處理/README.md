@@ -26,6 +26,19 @@
 
 --------------------------------
 ①
+
+import sys
+try:
+    fName = 'test61.txt'
+    file = open(fName, 'r')
+except IOError:
+    print(fName + '檔案無法開啟!')
+else:
+    i = 1
+    for data in file:
+        print(data.rstrip())
+        i += 1
+    file.close()    
 ```
 
 ```
@@ -34,7 +47,8 @@
 01 ok = True
 02 i = 0
 03 num = 15000
-04 05 while(ok):
+04
+05 while(ok):
 06      if i <= 8:
 07           num = num / i
 08           i += 1
@@ -49,6 +63,18 @@
 
 -------------------------------------
 ③
+
+ok = True
+i = 0
+num = 15000
+
+while(ok):
+    if i <= 8:
+        num = num / i
+        i += 1
+    else:
+        ok =False
+print(num)
 ```
 
 ```
@@ -60,7 +86,7 @@
 04 for i in range(len(stuScore) - 1):
 05      num += 1
 06      total += stuScore[i]
-07      avg = total // num
+07 avg = total // num
 08 print('成績總分為：', total)
 09 print('平均成績為：', avg)
 
@@ -80,6 +106,17 @@ B：第07行敘述應該改用下面哪個敘述？
 ------------------------------------
 A:④
 B:①
+
+stuScore = [85, 72, 65, 45, 93]
+num = 0
+total = 0
+for i in range(len(stuScore)):
+    num += 1
+    total += stuScore[i]
+    
+avg = total / num
+print('成績總分為：', total)
+print('平均成績為：', avg)
 ```
 
 ```
@@ -102,6 +139,17 @@ B:①
 
 ------------------------------------------
 ⑥ ⑦ ⑧
+
+import os
+def read_file(fileName):
+    cap = None
+    if os.path.isfile(fileName):
+        file = open(fileName, 'r')
+        while cap != '':
+            cap = file.read(1)
+            print(cap)
+
+
 ```
 
 ```
@@ -110,7 +158,7 @@ B:①
 
 01 datas = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
 02 i = 0
-03 while (i < 10)
+03 while (i < 10):
 04     print(datas[i])
 05     if datas[i] = 'D'
 06         break
@@ -133,6 +181,15 @@ B：第05行敘述應該使用下面哪個敘述？
 ------------------------------------------
 A:① 
 B:②
+
+datas = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
+i = 0
+while (i < 10):
+    print(datas[i])
+    if datas[i] == 'D':
+        break
+    else:
+        i += 1
 ```
 
 ```
@@ -174,6 +231,14 @@ B：第05行敘述應該填入下面哪個指令？
 --------------------------------------------
 A:①
 B:③
+
+while True:
+    try:
+        num = int(input('請輸入一個整數：'))
+        break
+    except ValueError:
+        print('這不是整數！')
+print("程式結式")
 ```
 ### old  
 1 分析、偵測及修復出現錯誤的程式碼區段
