@@ -413,6 +413,16 @@ else:
     
 -----------------------------------
 ① ⑤ ② ④
+
+word = input("請輸入英文單字：")
+
+if word.lower() == word:
+    print(word, "全部小寫字母")
+elif word.upper() == word:
+    print(word, "全部大寫字母")
+else:
+    print(word, "有大、小寫字母")
+    
 ```
 
 ```
@@ -438,6 +448,16 @@ B：請問第3行應該填入下列哪段指令？ ① break    ② continue  
 ------------------------------
 A:③
 B:②
+
+score = [57, 78, 69, 92, 35]
+
+for i in range(len(score)):
+    if score[i] >= 60:
+        continue
+    else:
+        score[i] = int(score[i] * 1.1) + 2
+        
+print(score)
 ```
 
 ```
