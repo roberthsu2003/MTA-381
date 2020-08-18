@@ -125,6 +125,19 @@ A:④
 B:①
 C:②
 D:③
+
+def movie(age=None):
+    rating = ""
+    if age == None: rating = "普遍級"
+    elif age < 13: rating = "普遍級"
+    elif age < 18: rating = "輔導級"
+    else: rating = "限制級"
+    return rating
+    
+print(movie())
+print(movie(12))
+print(movie(16))
+print(movie(19))
 ```
 
 ```
@@ -163,6 +176,21 @@ A:①
 B:③
 C:②
 D:③
+
+def get_root(x, y):
+    if x >= 0:
+        root = x ** (1 / y)
+    else:
+        if x % 2 == 0:
+            root = "虛數"
+        else:
+            root = -(-x) ** (1 / y)
+    
+    return root
+
+print(get_root(5, 10))
+print(get_root(-5,10))
+print(get_root(-6,10))
 ```
 
 ```
@@ -429,6 +457,10 @@ D：________請問D此處依序應該填入哪段敘述？
 
 
 --------------------------------
+A:①
+B:⑦
+C:③
+D:⑤
 實際程式碼
 num = 2
 while num < 51:
@@ -443,10 +475,7 @@ while num < 51:
     num = num + 1;
     
     
-A:①
-B:⑦
-C:③
-D:⑤
+
 ```
 
 ```
@@ -488,6 +517,11 @@ E：請問E此處依序應該填入哪段敘述？
 
 
 -----------------------------------
+A:⑤
+B:①
+C:②
+D:④
+E:③
 
 def find_book(books, title):
 	for i in range(len(books)):
@@ -497,11 +531,6 @@ def find_book(books, title):
 		else:
 			print("{0} 不在書庫中！".format(title))
 			
-A:⑤
-B:①
-C:②
-D:④
-E:③
 ```
 
 ```
@@ -585,7 +614,9 @@ C：第8行應該填入下列何者？
 
 
 ----------------------------------------
-
+A:①
+B:④
+C:③
 datas=['A','B','C','D','E','F','G','H','I']
 index = 0
 while(index < len(datas)):
@@ -595,9 +626,7 @@ while(index < len(datas)):
     else:
         index += 1
         
-A:①
-B:④
-C:③
+
 ```
 
 ### old
