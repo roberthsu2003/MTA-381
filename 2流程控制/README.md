@@ -487,6 +487,15 @@ B：請問第4行應該填入下列哪段敘述？
 -------------------------------
 A:②
 B:③
+
+def print_tables():
+    for x in range(3, 11):
+        for y in range(3, 11):
+            print(x, 'X', y, '=', x*y , end=' | ')
+        print()
+
+print_tables()
+
 ```
 
 ```
@@ -547,9 +556,6 @@ while num < 51:
     if flag == True:
         print(num, end=',')
     num = num + 1;
-    
-    
-
 ```
 
 ```
