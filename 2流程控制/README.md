@@ -237,6 +237,23 @@ C：請問第6行應該填入下列哪段敘述？
 A:①
 B:①
 C:③
+
+def price(age, locate):
+    money = 0
+    if age >= 5 and locate == True:
+        money = 100
+    elif age >= 5 and locate == False:
+        if age <= 17:
+            money = 200
+        else:
+            money = 300
+    
+    return money
+
+print(price(3, False))
+print(price(10, True))
+print(price(5, False))
+print(price(18, False))
 ```
 
 ```
@@ -273,6 +290,18 @@ C：請問第6行應該填入下列哪段敘述？
 
 
 ---------------------------------
+
+n = int(input("請輸入整數："))
+
+if n > -10 and n < 10:
+    digit = "一"
+elif n > -100 and n < 100:
+    digit = "二"
+else:
+    digit = "大於二"
+
+print(n,"是" ,digit + "位數")
+
 A:①
 B:②
 C:①
@@ -315,7 +344,24 @@ C：第14行的敘述為何？
 --------------------------------------
 A:①
 B:③
-C:⑤                          
+C:⑤  
+
+from random import randint
+ans = randint(1, 20)
+times = 1
+print("猜 1 到 20 的整數，猜錯4次結束程式！")
+while times <= 4:
+    guess = int(input("請輸入1 ~ 20的整數："))
+    if guess > ans:
+        print("太大了！")
+    elif guess < ans:
+        print("太小了！")
+    else:
+        print("答對了！")
+        break
+
+    times +=1
+print('程式結束')                        
 ```
 
 ```
