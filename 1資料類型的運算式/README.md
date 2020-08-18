@@ -575,6 +575,14 @@ A:②
 B:②
 C:①
 D:①
+
+list1 = ['a', 'b', 'c', 'd']
+list2 = ['A', 'B', 'C', 'D']
+print(list1 is list2)
+print(list1 == list2)
+list1 = list2
+print(list1 is list2)
+print(list1 == list2)
 ```
 
 ```
@@ -599,6 +607,22 @@ A:是
 B:否
 C:是
 D:是
+
+num1 = eval(input("請輸入第一個數字："))
+num2 = eval(input("請輸入第二個數字："))
+
+if num1 == num2:
+    print("二個數字相等")
+    
+if num1 <= num2:
+    print("第一個數字較小")
+    
+if num1 > num2:
+    print("第一個數字較大")
+    
+#if num2 = num1:
+#    print("二個數字相等")
+
 ```
 
 ### old  
