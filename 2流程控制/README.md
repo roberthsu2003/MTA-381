@@ -400,7 +400,8 @@ else:
 ```
 8._________請利用下列中的四個敘述區段，組合成一個檢查輸入字串中字母大小寫的程式
 (請填入代碼)。
- ① word = input("請輸入英文單字：")
+
+① word = input("請輸入英文單字：")
 ② elif word.upper () == word:
      print(word, "全部大寫字母")
 ③ else:
@@ -409,7 +410,8 @@ else:
     print(word, "有大、小寫字母")
 ⑤ if word.lower() == word:
     print(word, "全部小寫字母")
-⑥ else:     print(word, "全部大寫字母")
+⑥ else:
+	print(word, "全部大寫字母")
     
 -----------------------------------
 ① ⑤ ② ④
