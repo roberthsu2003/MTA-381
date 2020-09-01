@@ -397,7 +397,8 @@ C:②
 02     num = 0
 03     for_____________________:
 04         if___________________:
-05              num += 1 06     return num
+05              num += 1
+06     return num
 07 word = 'Python is ….'     # 句子省略
 08 letter = input("請輸入要計算哪個字母")
 09 letter_num = count(letter, word)
