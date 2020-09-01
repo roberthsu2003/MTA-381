@@ -445,7 +445,8 @@ A：請問第1行應該填入下列哪段敘述？
 ③ for i in range(len(score)):
 ④ for i in score: 
 
-B：請問第3行應該填入下列哪段指令？ ① break    ② continue    ③ exit()    ④ end 
+B：請問第3行應該填入下列哪段指令？
+① break    ② continue    ③ exit()    ④ end 
 
 ------------------------------
 A:③
