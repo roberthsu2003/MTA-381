@@ -512,7 +512,8 @@ ___________A___________
            
     if flag == True:
         print(num, end=',')
-    _______D_________ 
+    _______D_________
+    
 ① num = 2
    while num < 51:
 	    flag = True
