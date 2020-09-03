@@ -202,7 +202,8 @@ D:④
 A：第03 行敘述的空格應該填入下列哪個指令？
 
 ① range(len(word) + 1)
-② range(len(old_word) - 1)  ③ range(len(old_word))
+② range(len(old_word) - 1)
+③ range(len(old_word))
 ④ range(len(old_word) - 1, -1, -1)
 
 B：第04 行敘述的空格應該填入下列哪個指令？
