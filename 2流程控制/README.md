@@ -298,7 +298,7 @@ if n > -10 and n < 10:
     digit = "一"
 elif n > -100 and n < 100:
     digit = "二"
-else:
+else:v
     digit = "大於二"
 
 print(n,"是" ,digit + "位數")

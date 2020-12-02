@@ -158,7 +158,7 @@ def read_file(fileName):
 
 01 datas = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
 02 i = 0
-03 while (i < 10):
+03 while (i < 10)
 04     print(datas[i])
 05     if datas[i] = 'D'
 06         break
