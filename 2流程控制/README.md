@@ -616,7 +616,7 @@ def find_book(books, title):
 			break;
 		else:
 			print("{0} 不在書庫中！".format(title))
-			
+find_book(['a1','a2','a3'],'a3')			
 ```
 
 ```
