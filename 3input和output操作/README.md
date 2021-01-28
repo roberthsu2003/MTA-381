@@ -253,6 +253,12 @@ C:①
 _______________________
 ③
 
+import datetime
+d = datetime.datetime(2002, 4, 1)
+print('{:%B-%d-%y}'.format(d))
+n = 123456.789
+print('{:,.4f}'.format(n))
+
 數值格式化及對齊
 {:d}        : 整數
 {:f}        : 浮點數
