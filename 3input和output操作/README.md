@@ -394,7 +394,11 @@ def print_data(data_file):
 02 score = input("請輸入分數：")
 03 __________________________
 
-① print('"{0}",{1}'.format(name, score)) ② print('"%s",%s' % (name, score))  ③ print('"' + name + '",' + score)  ④ print(name + ',' + score)、 ⑤ print("{0},{1}".format(name, score))
+① print('"{0}",{1}'.format(name, score))
+② print('"%s",%s' % (name, score))
+③ print('"' + name + '",' + score)
+④ print(name + ',' + score)
+⑤ print("{0},{1}".format(name, score))
 
 ______________________
 name = input("請輸入姓名：")
