@@ -54,6 +54,10 @@
 
 -------------------------------------
 ① ③
+
+import random
+print(random.randrange(2, 11, 1))
+print(random.randint(2, 10))
 ```
 
 ```
@@ -70,6 +74,9 @@
 
 ------------------------------------
 ①
+
+import random
+print(random.random())
 ```
 
 ```
@@ -93,6 +100,10 @@
 
 --------------------------------
 ① ③
+
+from random import randint,randrange
+print(randint(1,30) * 3)
+print(randrange(3,91,3))
 ```
 
 ```
